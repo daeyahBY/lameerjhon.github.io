@@ -319,7 +319,6 @@ nav{
 
 .song-slider{
     width: 100%;
-    position: relative;
 }
 
 .seek-bar{
@@ -340,16 +339,20 @@ nav{
     box-shadow: -400px 0 0 400px #09619c;
 }
 
+.time-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
 .current-time,
 .song-duration{
     color: #fff;
     font-size: 14px;
+    position: static;
 }
 
-.song-duration{
-    position: absolute;
-    right: 0;
-}
+
 
 .controls{
     width: 60%;
@@ -481,12 +484,20 @@ nav{
 }
 
 .album-content .album-name{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
 }
 
-.artist-name{
-    font-size: 1.2rem;
+@media (max-width: 768px) {
+  .music-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .album-img img {
+    height: 300px;
+    max-width: 320px;
+  }
 }
 
 .footer-container{
