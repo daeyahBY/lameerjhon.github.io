@@ -10,5 +10,11 @@ let songs = [
         path: 'music/The Birds.mp3',
         artist: 'La &apos; meer Jhon',
         cover: 'img/cover.png'
+    },
+    {
+        name: 'It Ain&apos;t Over',
+        path: 'music/It Aint Over.mp3',
+        artist: 'La &apos; meer Jhon',
+        cover: 'img/itaintover.png'
     }
 ]
